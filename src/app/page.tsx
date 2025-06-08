@@ -44,12 +44,11 @@ export default function LandingPage() {
         <div className="relative z-10 flex items-center justify-center flex-1 px-4 py-12">
           <div className="max-w-lg text-center">
             {/* Modern Badge */}
-            <div className="inline-flex items-center bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full px-6 py-3 mb-8 shadow-lg hover:shadow-xl transition-all duration-300 transform ">
+            <div className="inline-flex items-center bg-blue-600  text-white rounded-full px-6 py-3 mb-8 shadow-lg hover:shadow-xl transition-all duration-300 transform ">
               <Sparkles className="h-4 w-4 mr-2 animate-pulse" />
               <span className="font-semibold text-sm tracking-wide">
                 BEPUL CHELLENJ
               </span>
-              <Star className="h-4 w-4 ml-2 text-yellow-300" />
             </div>
 
             {/* Modern Headline with better typography */}
@@ -62,12 +61,23 @@ export default function LandingPage() {
                 YORDAMIDA
               </span>
               <br />
-              <div className="mt-4 space-y-2">
-                <span className="inline-block p-3 rounded-2xl bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg transform  transition-all duration-300">
+              <div className="mt-4 space-y-8 ">
+                {/* <span className=" p-3 rounded-2xl bg-gradient-to-r from-blue-700 to-blue-800 text-white shadow-lg transform  transition-all duration-300">
                   SHAXSIY BRENDINGIZNI
+                  <br />
+                  NOLDAN QURING
+                </span> */}
+                <span className=" p-3 rounded-2xl bg-gradient-to-r from-blue-700 to-blue-800 text-white shadow-lg transform  transition-all duration-300">
+                  SHAXSIY
                 </span>
                 <br />
-                <span className="inline-block p-3 rounded-2xl bg-gradient-to-r from-purple-600 to-purple-700 text-white shadow-lg transform  transition-all duration-300">
+
+                <span className=" p-3 rounded-2xl bg-gradient-to-r from-blue-700 to-blue-800 text-white shadow-lg transform  transition-all duration-300">
+                  BRENDINGIZNI
+                </span>
+                <br />
+
+                <span className=" p-3 rounded-2xl bg-gradient-to-r from-blue-700 to-blue-800 text-white shadow-lg transform  transition-all duration-300">
                   NOLDAN QURING
                 </span>
               </div>
@@ -89,11 +99,11 @@ export default function LandingPage() {
                 <div className="text-sm text-gray-600">Kun</div>
               </div>
               <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-gray-100">
-                <div className="text-2xl font-bold text-purple-600">100%</div>
+                <div className="text-2xl font-bold text-blue-600">100%</div>
                 <div className="text-sm text-gray-600">Bepul</div>
               </div>
               <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-gray-100">
-                <div className="text-2xl font-bold text-green-600">AI</div>
+                <div className="text-2xl font-bold text-blue-600">AI</div>
                 <div className="text-sm text-gray-600">Tools</div>
               </div>
             </div>
@@ -103,8 +113,8 @@ export default function LandingPage() {
         <div className="relative z-10 flex items-center justify-center p-8">
           <div className="relative">
             {/* Floating elements around the AI image */}
-            <div className="absolute -top-4 -left-4 w-8 h-8 bg-blue-500 rounded-full animate-bounce opacity-60"></div>
-            <div className="absolute -bottom-4 -right-4 w-6 h-6 bg-purple-500 rounded-full animate-bounce animation-delay-1000 opacity-60"></div>
+            <div className="absolute -top-4 -left-4 w-8 h-8 bg-blue-700 rounded-full animate-bounce opacity-60"></div>
+            <div className="absolute -bottom-4 -right-4 w-6 h-6 bg-sky-500 rounded-full animate-bounce animation-delay-1000 opacity-60"></div>
             <div className="absolute top-1/2 -left-8 w-4 h-4 bg-pink-500 rounded-full animate-pulse opacity-60"></div>
 
             <div className="relative bg-white/20 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/30">
@@ -121,9 +131,11 @@ export default function LandingPage() {
       </section>
 
       {/* Enhanced Benefits Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-purple-800 px-4 py-16">
+      <section
+        className="relative bg-gradient-to-br from-gray-900 via-blue-950 to-blue-900 px-4 py-16"
+      >
         {/* Decorative elements */}
-        <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400"></div>
+        {/* <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400"></div> */}
 
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
@@ -148,9 +160,8 @@ export default function LandingPage() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="flex items-start space-x-4 bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-all duration-300 transform "
+                className="flex items-start space-x-4 bg-white/10 backdrop-blur-sm rounded-xl p-4  transition-all duration-300 transform "
               >
-                <div className="text-2xl">{item.icon}</div>
                 <div className="flex items-center space-x-3 flex-1">
                   <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0" />
                   <p className="text-white font-medium">{item.text}</p>
@@ -165,7 +176,7 @@ export default function LandingPage() {
               ref={buttonRef}
               onClick={handleButtonClick}
               size="lg"
-              className="w-full max-w-md bg-gradient-to-r from-green-500 via-green-600 to-emerald-600 hover:from-green-600 hover:via-green-700 hover:to-emerald-700 text-white font-bold py-6 px-8 text-xl rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 border-green-400/30"
+              className="w-full max-w-md bg-gradient-to-r from-blue-700 to-blue-800   text-white font-bold py-6 px-8 text-xl rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 border-blue-400/50"
             >
               <Zap className="h-5 w-5 mr-2" />
               KANALGA QO'SHILISH
@@ -187,7 +198,7 @@ export default function LandingPage() {
             <Button
               onClick={handleButtonClick}
               size="lg"
-              className="w-full bg-gradient-to-r from-green-500 via-green-600 to-emerald-600 hover:from-green-600 hover:via-green-700 hover:to-emerald-700 text-white font-bold py-6 px-8 text-lg rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-300 animate-in slide-in-from-bottom-4 border-2 border-green-400/30"
+              className="w-full bg-gradient-to-r from-blue-700 to-blue-800   text-white font-bold py-6 px-8 text-lg rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-300 animate-in slide-in-from-bottom-4 border-2 border-blue-400/50"
             >
               <Zap className="h-4 w-4 mr-2" />
               KANALGA QO'SHILISH
