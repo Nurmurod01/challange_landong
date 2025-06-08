@@ -203,7 +203,7 @@ export default function LandingPage() {
           <div className="mb-4">
             <div className="w-12 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full mb-4"></div>
             <p className="text-gray-300 text-sm">
-              © 2024 AI Personal Branding Challenge
+              © 2025 AI Personal Branding Challenge
             </p>
           </div>
         </div>
