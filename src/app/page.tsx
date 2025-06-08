@@ -190,7 +190,7 @@ export default function LandingPage() {
               className="w-full bg-gradient-to-r from-green-500 via-green-600 to-emerald-600 hover:from-green-600 hover:via-green-700 hover:to-emerald-700 text-white font-bold py-4 px-6 text-lg rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-300 animate-in slide-in-from-bottom-4 border-2 border-green-400/30"
             >
               <Zap className="h-4 w-4 mr-2" />
-              BEPUL RO'YXATDAN O'TISH
+              KANALGA QO'SHILISH
               <ArrowRight className="h-4 w-4 ml-2" />
             </Button>
           </div>
