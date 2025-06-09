@@ -35,7 +35,6 @@ export default function ThankYouPage() {
         <div className="absolute top-1/3 right-2 sm:right-10 w-2 h-2 sm:w-3 sm:h-3 bg-purple-300 rounded-full animate-ping animation-delay-700 opacity-50"></div>
       </div>
 
-      {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div
           className="absolute inset-0"
@@ -50,7 +49,6 @@ export default function ThankYouPage() {
       <div className="relative z-10 min-h-screen flex items-center justify-center p-2 sm:p-4">
         <div className="max-w-4xl mx-auto w-full">
           <div className="text-center">
-            {/* Main Heading - Responsive text sizes */}
             <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 sm:mb-6 leading-tight px-2">
               TABRIKLAYMIZ!
               <br />
@@ -59,7 +57,6 @@ export default function ThankYouPage() {
               </span>
             </h1>
 
-            {/* Content Container */}
             <div
               className={`transition-all duration-1000 transform ${
                 showContent
@@ -67,10 +64,8 @@ export default function ThankYouPage() {
                   : "translate-y-10 opacity-0"
               }`}
             >
-              {/* AI Image Section - Responsive sizing */}
               <div className="flex justify-center mb-4 sm:mb-6">
                 <div className="relative">
-                  {/* Floating elements around the AI image - Responsive sizing */}
                   <div className="absolute -top-3 -left-3 sm:-top-6 sm:-left-6 w-8 h-8 sm:w-12 sm:h-12 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full animate-bounce opacity-80 flex items-center justify-center">
                     <Sparkles className="h-3 w-3 sm:h-6 sm:w-6 text-white" />
                   </div>
@@ -84,10 +79,9 @@ export default function ThankYouPage() {
                       alt="AI Success"
                       width={200}
                       height={200}
-                      className="w-32 h-32 xs:w-40 xs:h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 lg:w-96 lg:h-96 max-w-full h-auto rounded-xl sm:rounded-2xl shadow-lg mx-auto"
+                      className="w-32 h-32 xs:w-40 xs:h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 lg:w-96 lg:h-96 max-w-full  rounded-xl sm:rounded-2xl shadow-lg mx-auto"
                     />
 
-                    {/* Success Badge - Responsive sizing */}
                     <div className="absolute -top-2 sm:-top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-green-500 to-emerald-500 text-white px-2 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold shadow-lg animate-pulse">
                       ✅ MUVAFFAQIYAT!
                     </div>
@@ -95,7 +89,6 @@ export default function ThankYouPage() {
                 </div>
               </div>
 
-              {/* Subheading - Responsive text and spacing */}
               <p className="text-sm xs:text-base sm:text-lg md:text-xl text-blue-100 mb-4 sm:mb-8 leading-relaxed px-2">
                 Endi siz{" "}
                 <span className="text-yellow-400 font-bold">
@@ -106,7 +99,6 @@ export default function ThankYouPage() {
                 challengeining a'zosisiz!
               </p>
 
-              {/* Next Step Box - Responsive padding and text */}
               <div className="bg-black/20 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-6 mb-4 sm:mb-8 border border-gray-700 mx-2 sm:mx-4">
                 <h3 className="text-white font-bold text-sm sm:text-lg mb-1 sm:mb-2">
                   Keyingi qadam:
@@ -118,7 +110,6 @@ export default function ThankYouPage() {
               </div>
             </div>
 
-            {/* CTA Button - Responsive sizing */}
             <div
               className={`text-center mb-6 sm:mb-12 transition-all duration-1000 transform px-2 ${
                 showButton
@@ -144,7 +135,6 @@ export default function ThankYouPage() {
               </p>
             </div>
 
-            {/* Bottom Stats - Responsive grid and sizing */}
             <div className="grid grid-cols-3 gap-2 sm:gap-4 max-w-xs sm:max-w-md mx-auto px-2">
               <div className="bg-black/20 backdrop-blur-sm rounded-lg sm:rounded-xl p-2 sm:p-4 text-center border border-gray-700">
                 <div className="text-lg sm:text-2xl font-bold text-white">
