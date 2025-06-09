@@ -1,10 +1,10 @@
-"use client"
-import { CheckCircle, Sparkles } from "lucide-react"
-import Image from "next/image"
-import { Ai } from "@/assets/index"
-import { useState, useEffect, useRef } from "react"
-import { DiamondBackground } from "@/components/diamondbg"
-import { ModalForm } from "@/components/modalform"
+"use client";
+import { CheckCircle, Sparkles } from "lucide-react";
+import Image from "next/image";
+import { Ai } from "@/assets/index";
+import { useState, useEffect, useRef } from "react";
+import { DiamondBackground } from "@/components/diamondbg";
+import { ModalForm } from "@/components/modalform";
 
 // Add this after your imports
 const animateFadeInUp = `
@@ -21,30 +21,31 @@ const animateFadeInUp = `
 .animate-fade-in-up {
   animation: fadeInUp 0.3s ease-out forwards;
 }
-`
+`;
 
 export default function LandingPage() {
-  const [showFixedButton, setShowFixedButton] = useState(false)
-  const mainButtonRef = useRef<HTMLDivElement>(null)
+  const [showFixedButton, setShowFixedButton] = useState(false);
+  const mainButtonRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
       if (mainButtonRef.current) {
-        const buttonRect = mainButtonRef.current.getBoundingClientRect()
+        const buttonRect = mainButtonRef.current.getBoundingClientRect();
         // Check if the button is not visible in the viewport
-        const isButtonVisible = buttonRect.top < window.innerHeight && buttonRect.bottom > 0
+        const isButtonVisible =
+          buttonRect.top < window.innerHeight && buttonRect.bottom > 0;
 
-        setShowFixedButton(!isButtonVisible)
+        setShowFixedButton(!isButtonVisible);
       }
-    }
+    };
 
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll);
     // Initial check
-    handleScroll()
+    handleScroll();
 
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
-  console.log(showFixedButton)
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  console.log(showFixedButton);
 
   return (
     <>
@@ -65,7 +66,9 @@ export default function LandingPage() {
               {/* Modern Badge */}
               <div className="inline-flex items-center bg-blue-600  text-white rounded-full px-6 py-3 mb-8 shadow-lg hover:shadow-xl transition-all duration-300 transform ">
                 <Sparkles className="h-4 w-4 mr-2 animate-pulse" />
-                <span className="font-semibold text-sm tracking-wide">BEPUL CHELLENJ</span>
+                <span className="font-semibold text-sm tracking-wide">
+                  BEPUL CHELLENJ
+                </span>
               </div>
 
               {/* Modern Headline with better typography */}
@@ -78,12 +81,7 @@ export default function LandingPage() {
                   YORDAMIDA
                 </span>
                 <br />
-                <div className="mt-4 space-y-8 ">
-                  {/* <span className=" p-3 rounded-2xl bg-gradient-to-r from-blue-700 to-blue-800 text-white shadow-lg transform  transition-all duration-300">
-                    SHAXSIY BRENDINGIZNI
-                    <br />
-                    NOLDAN QURING
-                  </span> */}
+                <div className=" mt-4 space-y-8 ">
                   <span className=" p-3 rounded-2xl bg-gradient-to-r from-blue-700 to-blue-800 text-white shadow-lg transform  transition-all duration-300">
                     SHAXSIY
                   </span>
@@ -103,7 +101,10 @@ export default function LandingPage() {
               {/* Enhanced Subheading */}
               <p className="text-xl text-gray-700 mb-8 font-medium leading-relaxed">
                 AI tools bilan professional brend yaratish bo'yicha
-                <span className="text-blue-600 font-semibold"> amaliy yo'riqnoma</span>
+                <span className="text-blue-600 font-semibold">
+                  {" "}
+                  amaliy yo'riqnoma
+                </span>
               </p>
 
               {/* Stats Cards */}
@@ -151,13 +152,18 @@ export default function LandingPage() {
 
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-12">
-              <h3 className="text-white text-3xl font-bold mb-4">Ushbu chellenjda siz o'rganasiz:</h3>
+              <h3 className="text-white text-3xl font-bold mb-4">
+                Ushbu chellenjda siz o'rganasiz:
+              </h3>
               <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto rounded-full"></div>
             </div>
 
             <div className="grid gap-6 mb-12">
               {[
-                { icon: "🤖", text: "AI yordamida professional profil yaratish" },
+                {
+                  icon: "🤖",
+                  text: "AI yordamida professional profil yaratish",
+                },
                 { icon: "🎨", text: "Vizual identifikatsiya va logo dizayni" },
                 { icon: "📋", text: "Kontent strategiyasi va rejalashtirish" },
                 {
@@ -165,7 +171,10 @@ export default function LandingPage() {
                   text: "Ijtimoiy tarmoqlarda brendni rivojlantirish",
                 },
                 { icon: "✨", text: "AI tools bilan kontent yaratish sirlari" },
-                { icon: "🎯", text: "Auditoriya tahlili va maqsadli marketing" },
+                {
+                  icon: "🎯",
+                  text: "Auditoriya tahlili va maqsadli marketing",
+                },
                 { icon: "💰", text: "Brendni monetizatsiya qilish yo'llari" },
               ].map((item, index) => (
                 <div
@@ -205,11 +214,13 @@ export default function LandingPage() {
           <div className="max-w-md mx-auto text-center">
             <div className="mb-4">
               <div className="w-12 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full mb-4"></div>
-              <p className="text-gray-300 text-sm">© 2025 AI Personal Branding Challenge</p>
+              <p className="text-gray-300 text-sm">
+                © 2025 AI Personal Branding Challenge
+              </p>
             </div>
           </div>
         </footer>
       </div>
     </>
-  )
+  );
 }

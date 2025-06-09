@@ -46,7 +46,7 @@ export function ModalForm({ externalTrigger = false }) {
       <Button
         onClick={openModal}
         size="lg"
-        className="w-full bg-blue-800 text-white font-bold py-6 px-8 text-lg rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 border-blue-700"
+        className="w-full bg-gray-900 text-white font-bold py-6 px-8 text-lg rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 border-gray-800"
       >
         <Zap className="h-4 w-4 mr-2" />
         RO'YXATDAN O'TISH
@@ -55,7 +55,10 @@ export function ModalForm({ externalTrigger = false }) {
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         {/* Remove the DialogTrigger since we now have a standalone button */}
-        <DialogContent showCloseButton={false} className="min-w-full w-screen rounded-none h-screen p-0 bg-blue-800 border-none">
+        <DialogContent
+          showCloseButton={false}
+          className="min-w-full w-screen rounded-none h-screen p-0 bg-gray-900 border-none"
+        >
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-10">
             <div
@@ -87,7 +90,7 @@ export function ModalForm({ externalTrigger = false }) {
             {/* Header Section */}
             <div className="text-center mb-12 max-w-2xl">
               {/* Badge */}
-              <div className="inline-flex items-center bg-white text-blue-800 rounded-full px-6 py-3 mb-6 shadow-lg font-bold text-sm">
+              <div className="inline-flex items-center bg-white text-gray-900 rounded-full px-6 py-3 mb-6 shadow-lg font-bold text-sm">
                 <Zap className="h-4 w-4 mr-2" />
                 BEPUL CHELLENJ
               </div>
@@ -101,13 +104,13 @@ export function ModalForm({ externalTrigger = false }) {
 
               {/* Benefits */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+                <div className="bg-black/20 backdrop-blur-sm rounded-xl p-4 border border-gray-700">
                   <p className="text-white text-sm font-medium">10 Kun Bepul</p>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+                <div className="bg-black/20 backdrop-blur-sm rounded-xl p-4 border border-gray-700">
                   <p className="text-white text-sm font-medium">AI Tools</p>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+                <div className="bg-black/20 backdrop-blur-sm rounded-xl p-4 border border-gray-700">
                   <p className="text-white text-sm font-medium">
                     Amaliy Darslar
                   </p>
@@ -117,7 +120,7 @@ export function ModalForm({ externalTrigger = false }) {
 
             {/* Form Section */}
             <div className="w-full max-w-md">
-              <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20 shadow-2xl">
+              <div className="bg-black/30 backdrop-blur-lg rounded-3xl p-8 border border-gray-700 shadow-2xl">
                 <DialogHeader className="text-center mb-6">
                   <DialogTitle className="text-2xl font-bold text-white mb-2">
                     Ro'yxatdan o'tish
@@ -135,7 +138,7 @@ export function ModalForm({ externalTrigger = false }) {
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       required
-                      className="w-full pl-12 pr-4 py-4 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/30 focus:border-transparent transition-all duration-300"
+                      className="w-full pl-12 pr-4 py-4 bg-black/20 border border-gray-700 rounded-xl text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/30 focus:border-transparent transition-all duration-300"
                       placeholder="Ismingizni kiriting"
                     />
                   </div>
@@ -147,14 +150,14 @@ export function ModalForm({ externalTrigger = false }) {
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
                       required
-                      className="w-full pl-12 pr-4 py-4 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/30 focus:border-transparent transition-all duration-300"
+                      className="w-full pl-12 pr-4 py-4 bg-black/20 border border-gray-700 rounded-xl text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/30 focus:border-transparent transition-all duration-300"
                       placeholder="+998 __ ___ __ __"
                     />
                   </div>
 
                   <Button
                     type="submit"
-                    className="w-full bg-white hover:bg-white/90 text-blue-800 font-bold py-4 px-6 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300 text-lg"
+                    className="w-full bg-white hover:bg-white/90 text-gray-900 font-bold py-4 px-6 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300 text-lg"
                   >
                     <Zap className="h-5 w-5 mr-2" />
                     YUBORISH
